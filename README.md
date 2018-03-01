@@ -1,0 +1,1 @@
+Ce projet consiste en la réalisation d'une interface (cf. `code/index.html`) pour tester un jeu de *pièces sur un échiquier* inventé par Maxim Kontsevich et ses variantes. Ce projet a été réalisé par [Lucas Willems](http://www.lucaswillems.com) pour le projet de prérentrée en question de l'ENS Ulm supervisé par Damien Vergnaud.

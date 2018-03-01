@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pièces sur un échiquier</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1 class="text-center">Pièces sur un échiquier</h1>
+
+	<h2>Jeu</h2>
+
+	<p>
+		<button id="play">Jeu</button>
+		<button id="edit">Edition</button>
+	</p>
+	<form id="game"><p><input type="text" placeholder="Jeu"></p></form>	
+	<div id="chessboard"></div>
+
+	<h2>Formalisme</h2>
+
+	<p>Une <b>configuration</b> s'écrit de la forme <code>{prison1},...,{prisonK}|{pièce1},...,{pièceN}</code> où, par exemple, <code>{prison1}</code> vaut <code>A1</code> et <code>{pièce1}</code> vaut <code>B1c</code>, <code>B1t</code> ou <code>B1h</code> avec :
+	<ul>
+		<li><code>c</code> pour désigner une pièce de face quelconque</li>
+		<li><code>h</code> pour désigner une pièce de face "head"</li>
+		<li><code>t</code> pour désigner une pièce de face "tail"</li>
+	</ul>
+	</p>
+	
+	<p>Une <b>séquence</b> de coups s'écrit de la forme <code>{coup1},...,{coupM}</code> où, par exemple, <code>{coup1}</code> vaut <code>A3</code>.</p>
+	
+	<p>Un <b>jeu</b> est composé d'une configuration initiale et d'une séquence de coups et s'écrit de la forme <code>{configuration}|{séquence}</code>.</p>
+	
+	<h2>Comment jouer ?</h2>
+
+	<p>2 modes sont actuellement présents :</p>
+	<ul>
+		<li>"édition" pour modifier la configuration initiale;</li>
+		<li>"jeu" pour jouer sur la configuration initiale</li>
+	</ul>
+
+	<p>Dans le mode "édition", lorsque vous vous placez sur une des cases de l'échiquier :</p>
+	<ul>
+		<li>un clique gauche fait apparaître ou disparaître une prison;</li>
+		<li>appuyer sur "c", "t", "h" fait apparaître ou disparaître une pièce de type "c", "t" ou "h".</li>
+	</ul>
+
+	<p>Dans le mode "jeu", lorsque vous vous placez sur une des cases de l'échiquier :</p>
+	<ul>
+		<li>un clique gauche déplace la pièce selon les règles du jeu;</li>
+		<li>un clique droit annule le dernier coup.</li>
+	</ul>
+
+	<script src="scripts/jquery-2.2.3.min.js"></script>
+	<script src="scripts/helpers.js"></script>
+	<script src="scripts/chessboard.js"></script>
+	<script src="scripts/chessboardinterface.js"></script>
+	<script src="scripts/main.js"></script>
+</body>
+</html>

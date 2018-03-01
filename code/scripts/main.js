@@ -1,0 +1,1 @@
+chessboardInterface = new ChessboardInterface()

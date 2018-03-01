@@ -1,0 +1,54 @@
+.text-center {
+	text-align: center
+}
+
+code {
+	background: #f0f0f0;
+	padding: 2px 3px;
+}
+
+#game input {
+	font-family: monospace;
+	width: 400px;
+}
+
+#chessboard table {
+	border-collapse: collapse;
+}
+
+#chessboard table td {
+	width: 30px;
+	line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+	border: 1px solid black;
+	cursor: default;
+}
+
+#chessboard table td.jail {
+	background-color: yellow;
+}
+
+#chessboard table td.border {
+	color: white;
+	background-color: purple;
+}
+
+#play, #edit {
+	font-size: 16px;
+	width: 70px
+}
+
+#play {
+	color: green;
+}
+
+#edit {
+	color: red;
+}
+
+#play.selected, #edit.selected {
+	width: 200px;
+	font-weight: bold
+}
